@@ -3,39 +3,117 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 110;
+	objectVersion = 60;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		30BAC488309B6FAA001B2D45 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC46E309B6FAA001B2D45 /* Comfortaa-Bold.ttf */; };
+		30BAC489309B6FAA001B2D45 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC46F309B6FAA001B2D45 /* Comfortaa-Medium.ttf */; };
+		30BAC48A309B6FAA001B2D45 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC470309B6FAA001B2D45 /* Comfortaa-Regular.ttf */; };
+		30BAC48B309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC471309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf */; };
+		30BAC48C309B6FAA001B2D45 /* Iceberg-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC472309B6FAA001B2D45 /* Iceberg-Regular.ttf */; };
+		30BAC48D309B6FAA001B2D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC47E309B6FAA001B2D45 /* Assets.xcassets */; };
+		30BAC48F309B6FAA001B2D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC482309B6FAA001B2D45 /* LaunchScreen.storyboard */; };
+		30BAC490309B6FAA001B2D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC484309B6FAA001B2D45 /* Main.storyboard */; };
+		30BAC491309B6FAA001B2D45 /* AnimatedIceSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43A309B6FAA001B2D45 /* AnimatedIceSphere.swift */; };
+		30BAC492309B6FAA001B2D45 /* FrostBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43B309B6FAA001B2D45 /* FrostBackground.swift */; };
+		30BAC493309B6FAA001B2D45 /* IceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43C309B6FAA001B2D45 /* IceButton.swift */; };
+		30BAC494309B6FAA001B2D45 /* IceSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43D309B6FAA001B2D45 /* IceSlider.swift */; };
+		30BAC495309B6FAA001B2D45 /* LabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43E309B6FAA001B2D45 /* LabCard.swift */; };
+		30BAC496309B6FAA001B2D45 /* LabTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC43F309B6FAA001B2D45 /* LabTabBar.swift */; };
+		30BAC497309B6FAA001B2D45 /* LabTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC441309B6FAA001B2D45 /* LabTheme.swift */; };
+		30BAC498309B6FAA001B2D45 /* FontDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC443309B6FAA001B2D45 /* FontDebug.swift */; };
+		30BAC499309B6FAA001B2D45 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC445309B6FAA001B2D45 /* AppLinks.swift */; };
+		30BAC49A309B6FAA001B2D45 /* ClarityCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC447309B6FAA001B2D45 /* ClarityCalculatorViewModel.swift */; };
+		30BAC49B309B6FAA001B2D45 /* ClarityCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC449309B6FAA001B2D45 /* ClarityCalculatorView.swift */; };
+		30BAC49C309B6FAA001B2D45 /* CrystalRingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC44C309B6FAA001B2D45 /* CrystalRingViewModel.swift */; };
+		30BAC49D309B6FAA001B2D45 /* CrystalRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC44E309B6FAA001B2D45 /* CrystalRingView.swift */; };
+		30BAC49E309B6FAA001B2D45 /* FreezeTimersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC451309B6FAA001B2D45 /* FreezeTimersViewModel.swift */; };
+		30BAC49F309B6FAA001B2D45 /* FreezeTimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC453309B6FAA001B2D45 /* FreezeTimersView.swift */; };
+		30BAC4A0309B6FAA001B2D45 /* HarvestRitualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC456309B6FAA001B2D45 /* HarvestRitualViewModel.swift */; };
+		30BAC4A1309B6FAA001B2D45 /* HarvestChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC458309B6FAA001B2D45 /* HarvestChrome.swift */; };
+		30BAC4A2309B6FAA001B2D45 /* HarvestRitualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC459309B6FAA001B2D45 /* HarvestRitualView.swift */; };
+		30BAC4A3309B6FAA001B2D45 /* LabJournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC45C309B6FAA001B2D45 /* LabJournalViewModel.swift */; };
+		30BAC4A4309B6FAA001B2D45 /* LabJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC45E309B6FAA001B2D45 /* LabJournalView.swift */; };
+		30BAC4A5309B6FAA001B2D45 /* OnboardingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC461309B6FAA001B2D45 /* OnboardingStore.swift */; };
+		30BAC4A6309B6FAA001B2D45 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC463309B6FAA001B2D45 /* OnboardingView.swift */; };
+		30BAC4A7309B6FAA001B2D45 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC466309B6FAA001B2D45 /* SettingsView.swift */; };
+		30BAC4A8309B6FAA001B2D45 /* HarvestBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC46A309B6FAA001B2D45 /* HarvestBatch.swift */; };
+		30BAC4A9309B6FAA001B2D45 /* IceShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC46B309B6FAA001B2D45 /* IceShape.swift */; };
+		30BAC4AA309B6FAA001B2D45 /* LabExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC46C309B6FAA001B2D45 /* LabExperiment.swift */; };
+		30BAC4AB309B6FAA001B2D45 /* ClarityScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC475309B6FAA001B2D45 /* ClarityScorer.swift */; };
+		30BAC4AC309B6FAA001B2D45 /* DilutionPredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC476309B6FAA001B2D45 /* DilutionPredictor.swift */; };
+		30BAC4AD309B6FAA001B2D45 /* ExperimentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC477309B6FAA001B2D45 /* ExperimentStore.swift */; };
+		30BAC4AE309B6FAA001B2D45 /* FreezeTimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC478309B6FAA001B2D45 /* FreezeTimeCalculator.swift */; };
+		30BAC4AF309B6FAA001B2D45 /* HarvestBatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC479309B6FAA001B2D45 /* HarvestBatchStore.swift */; };
+		30BAC4B0309B6FAA001B2D45 /* HarvestNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC47A309B6FAA001B2D45 /* HarvestNotificationScheduler.swift */; };
+		30BAC4B1309B6FAA001B2D45 /* HarvestWindowCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC47B309B6FAA001B2D45 /* HarvestWindowCalculator.swift */; };
+		30BAC4B2309B6FAA001B2D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC47D309B6FAA001B2D45 /* AppDelegate.swift */; };
+		30BAC4B3309B6FAA001B2D45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC47F309B6FAA001B2D45 /* ContentView.swift */; };
+		30BAC4B4309B6FAA001B2D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */; };
+		30BAC4B5309B6FAA001B2D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC486309B6FAA001B2D45 /* ViewController.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		305D63A4309258E700E5C3DE /* 1 Ice Maker Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1 Ice Maker Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BAC43A309B6FAA001B2D45 /* AnimatedIceSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIceSphere.swift; sourceTree = "<group>"; };
+		30BAC43B309B6FAA001B2D45 /* FrostBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostBackground.swift; sourceTree = "<group>"; };
+		30BAC43C309B6FAA001B2D45 /* IceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceButton.swift; sourceTree = "<group>"; };
+		30BAC43D309B6FAA001B2D45 /* IceSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceSlider.swift; sourceTree = "<group>"; };
+		30BAC43E309B6FAA001B2D45 /* LabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCard.swift; sourceTree = "<group>"; };
+		30BAC43F309B6FAA001B2D45 /* LabTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTabBar.swift; sourceTree = "<group>"; };
+		30BAC441309B6FAA001B2D45 /* LabTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabTheme.swift; sourceTree = "<group>"; };
+		30BAC443309B6FAA001B2D45 /* FontDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDebug.swift; sourceTree = "<group>"; };
+		30BAC445309B6FAA001B2D45 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
+		30BAC447309B6FAA001B2D45 /* ClarityCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityCalculatorViewModel.swift; sourceTree = "<group>"; };
+		30BAC449309B6FAA001B2D45 /* ClarityCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityCalculatorView.swift; sourceTree = "<group>"; };
+		30BAC44C309B6FAA001B2D45 /* CrystalRingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalRingViewModel.swift; sourceTree = "<group>"; };
+		30BAC44E309B6FAA001B2D45 /* CrystalRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrystalRingView.swift; sourceTree = "<group>"; };
+		30BAC451309B6FAA001B2D45 /* FreezeTimersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezeTimersViewModel.swift; sourceTree = "<group>"; };
+		30BAC453309B6FAA001B2D45 /* FreezeTimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezeTimersView.swift; sourceTree = "<group>"; };
+		30BAC456309B6FAA001B2D45 /* HarvestRitualViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestRitualViewModel.swift; sourceTree = "<group>"; };
+		30BAC458309B6FAA001B2D45 /* HarvestChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestChrome.swift; sourceTree = "<group>"; };
+		30BAC459309B6FAA001B2D45 /* HarvestRitualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestRitualView.swift; sourceTree = "<group>"; };
+		30BAC45C309B6FAA001B2D45 /* LabJournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabJournalViewModel.swift; sourceTree = "<group>"; };
+		30BAC45E309B6FAA001B2D45 /* LabJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabJournalView.swift; sourceTree = "<group>"; };
+		30BAC461309B6FAA001B2D45 /* OnboardingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStore.swift; sourceTree = "<group>"; };
+		30BAC463309B6FAA001B2D45 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		30BAC466309B6FAA001B2D45 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		30BAC46A309B6FAA001B2D45 /* HarvestBatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestBatch.swift; sourceTree = "<group>"; };
+		30BAC46B309B6FAA001B2D45 /* IceShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceShape.swift; sourceTree = "<group>"; };
+		30BAC46C309B6FAA001B2D45 /* LabExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabExperiment.swift; sourceTree = "<group>"; };
+		30BAC46E309B6FAA001B2D45 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		30BAC46F309B6FAA001B2D45 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		30BAC470309B6FAA001B2D45 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		30BAC471309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		30BAC472309B6FAA001B2D45 /* Iceberg-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Iceberg-Regular.ttf"; sourceTree = "<group>"; };
+		30BAC475309B6FAA001B2D45 /* ClarityScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClarityScorer.swift; sourceTree = "<group>"; };
+		30BAC476309B6FAA001B2D45 /* DilutionPredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DilutionPredictor.swift; sourceTree = "<group>"; };
+		30BAC477309B6FAA001B2D45 /* ExperimentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentStore.swift; sourceTree = "<group>"; };
+		30BAC478309B6FAA001B2D45 /* FreezeTimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezeTimeCalculator.swift; sourceTree = "<group>"; };
+		30BAC479309B6FAA001B2D45 /* HarvestBatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestBatchStore.swift; sourceTree = "<group>"; };
+		30BAC47A309B6FAA001B2D45 /* HarvestNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestNotificationScheduler.swift; sourceTree = "<group>"; };
+		30BAC47B309B6FAA001B2D45 /* HarvestWindowCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarvestWindowCalculator.swift; sourceTree = "<group>"; };
+		30BAC47D309B6FAA001B2D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30BAC47E309B6FAA001B2D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30BAC47F309B6FAA001B2D45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30BAC480309B6FAA001B2D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BAC481309B6FAA001B2D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30BAC483309B6FAA001B2D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		30BAC486309B6FAA001B2D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A6081FB87B4B6BCE69704DB /* Pods_1_Ice_Maker_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1_Ice_Maker_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.release.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.release.xcconfig"; sourceTree = "<group>"; };
+		E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.debug.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		305D63B6309258E700E5C3DE /* Exceptions for "1 Ice Maker Lab" folder in "1 Ice Maker Lab" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 305D63A3309258E700E5C3DE /* 1 Ice Maker Lab */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		305D63A6309258E700E5C3DE /* 1 Ice Maker Lab */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				305D63B6309258E700E5C3DE /* Exceptions for "1 Ice Maker Lab" folder in "1 Ice Maker Lab" target */,
-			);
-			path = "1 Ice Maker Lab";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		305D63A1309258E700E5C3DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -43,8 +121,10 @@
 		305D639B309258E700E5C3DE = {
 			isa = PBXGroup;
 			children = (
-				305D63A6309258E700E5C3DE /* 1 Ice Maker Lab */,
+				30BAC487309B6FAA001B2D45 /* 1 Ice Maker Lab */,
 				305D63A5309258E700E5C3DE /* Products */,
+				556498D6033DC0AB89EBB314 /* Pods */,
+				F08BF794C7E884A00BC450F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +136,308 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		30BAC440309B6FAA001B2D45 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC43A309B6FAA001B2D45 /* AnimatedIceSphere.swift */,
+				30BAC43B309B6FAA001B2D45 /* FrostBackground.swift */,
+				30BAC43C309B6FAA001B2D45 /* IceButton.swift */,
+				30BAC43D309B6FAA001B2D45 /* IceSlider.swift */,
+				30BAC43E309B6FAA001B2D45 /* LabCard.swift */,
+				30BAC43F309B6FAA001B2D45 /* LabTabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		30BAC442309B6FAA001B2D45 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC441309B6FAA001B2D45 /* LabTheme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		30BAC444309B6FAA001B2D45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC443309B6FAA001B2D45 /* FontDebug.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30BAC446309B6FAA001B2D45 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC440309B6FAA001B2D45 /* Components */,
+				30BAC442309B6FAA001B2D45 /* DesignSystem */,
+				30BAC444309B6FAA001B2D45 /* Extensions */,
+				30BAC445309B6FAA001B2D45 /* AppLinks.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		30BAC448309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC447309B6FAA001B2D45 /* ClarityCalculatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC44A309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC449309B6FAA001B2D45 /* ClarityCalculatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC44B309B6FAA001B2D45 /* ClarityCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC448309B6FAA001B2D45 /* ViewModels */,
+				30BAC44A309B6FAA001B2D45 /* Views */,
+			);
+			path = ClarityCalculator;
+			sourceTree = "<group>";
+		};
+		30BAC44D309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC44C309B6FAA001B2D45 /* CrystalRingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC44F309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC44E309B6FAA001B2D45 /* CrystalRingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC450309B6FAA001B2D45 /* CrystalRing */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC44D309B6FAA001B2D45 /* ViewModels */,
+				30BAC44F309B6FAA001B2D45 /* Views */,
+			);
+			path = CrystalRing;
+			sourceTree = "<group>";
+		};
+		30BAC452309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC451309B6FAA001B2D45 /* FreezeTimersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC454309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC453309B6FAA001B2D45 /* FreezeTimersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC455309B6FAA001B2D45 /* FreezeTimers */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC452309B6FAA001B2D45 /* ViewModels */,
+				30BAC454309B6FAA001B2D45 /* Views */,
+			);
+			path = FreezeTimers;
+			sourceTree = "<group>";
+		};
+		30BAC457309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC456309B6FAA001B2D45 /* HarvestRitualViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC45A309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC458309B6FAA001B2D45 /* HarvestChrome.swift */,
+				30BAC459309B6FAA001B2D45 /* HarvestRitualView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC45B309B6FAA001B2D45 /* HarvestRitual */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC457309B6FAA001B2D45 /* ViewModels */,
+				30BAC45A309B6FAA001B2D45 /* Views */,
+			);
+			path = HarvestRitual;
+			sourceTree = "<group>";
+		};
+		30BAC45D309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC45C309B6FAA001B2D45 /* LabJournalViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC45F309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC45E309B6FAA001B2D45 /* LabJournalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC460309B6FAA001B2D45 /* LabJournal */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC45D309B6FAA001B2D45 /* ViewModels */,
+				30BAC45F309B6FAA001B2D45 /* Views */,
+			);
+			path = LabJournal;
+			sourceTree = "<group>";
+		};
+		30BAC462309B6FAA001B2D45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC461309B6FAA001B2D45 /* OnboardingStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30BAC464309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC463309B6FAA001B2D45 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC465309B6FAA001B2D45 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC462309B6FAA001B2D45 /* ViewModels */,
+				30BAC464309B6FAA001B2D45 /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		30BAC467309B6FAA001B2D45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC466309B6FAA001B2D45 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30BAC468309B6FAA001B2D45 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC467309B6FAA001B2D45 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		30BAC469309B6FAA001B2D45 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC44B309B6FAA001B2D45 /* ClarityCalculator */,
+				30BAC450309B6FAA001B2D45 /* CrystalRing */,
+				30BAC455309B6FAA001B2D45 /* FreezeTimers */,
+				30BAC45B309B6FAA001B2D45 /* HarvestRitual */,
+				30BAC460309B6FAA001B2D45 /* LabJournal */,
+				30BAC465309B6FAA001B2D45 /* Onboarding */,
+				30BAC468309B6FAA001B2D45 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		30BAC46D309B6FAA001B2D45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC46A309B6FAA001B2D45 /* HarvestBatch.swift */,
+				30BAC46B309B6FAA001B2D45 /* IceShape.swift */,
+				30BAC46C309B6FAA001B2D45 /* LabExperiment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30BAC473309B6FAA001B2D45 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC46E309B6FAA001B2D45 /* Comfortaa-Bold.ttf */,
+				30BAC46F309B6FAA001B2D45 /* Comfortaa-Medium.ttf */,
+				30BAC470309B6FAA001B2D45 /* Comfortaa-Regular.ttf */,
+				30BAC471309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf */,
+				30BAC472309B6FAA001B2D45 /* Iceberg-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		30BAC474309B6FAA001B2D45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC473309B6FAA001B2D45 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30BAC47C309B6FAA001B2D45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC475309B6FAA001B2D45 /* ClarityScorer.swift */,
+				30BAC476309B6FAA001B2D45 /* DilutionPredictor.swift */,
+				30BAC477309B6FAA001B2D45 /* ExperimentStore.swift */,
+				30BAC478309B6FAA001B2D45 /* FreezeTimeCalculator.swift */,
+				30BAC479309B6FAA001B2D45 /* HarvestBatchStore.swift */,
+				30BAC47A309B6FAA001B2D45 /* HarvestNotificationScheduler.swift */,
+				30BAC47B309B6FAA001B2D45 /* HarvestWindowCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30BAC487309B6FAA001B2D45 /* 1 Ice Maker Lab */ = {
+			isa = PBXGroup;
+			children = (
+				30BAC446309B6FAA001B2D45 /* Core */,
+				30BAC469309B6FAA001B2D45 /* Features */,
+				30BAC46D309B6FAA001B2D45 /* Models */,
+				30BAC474309B6FAA001B2D45 /* Resources */,
+				30BAC47C309B6FAA001B2D45 /* Services */,
+				30BAC47D309B6FAA001B2D45 /* AppDelegate.swift */,
+				30BAC47E309B6FAA001B2D45 /* Assets.xcassets */,
+				30BAC47F309B6FAA001B2D45 /* ContentView.swift */,
+				30BAC480309B6FAA001B2D45 /* Info.plist */,
+				30BAC482309B6FAA001B2D45 /* LaunchScreen.storyboard */,
+				30BAC484309B6FAA001B2D45 /* Main.storyboard */,
+				30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */,
+				30BAC486309B6FAA001B2D45 /* ViewController.swift */,
+			);
+			path = "1 Ice Maker Lab";
+			sourceTree = "<group>";
+		};
+		556498D6033DC0AB89EBB314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */,
+				907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F08BF794C7E884A00BC450F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A6081FB87B4B6BCE69704DB /* Pods_1_Ice_Maker_Lab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -63,14 +445,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305D63B7309258E700E5C3DE /* Build configuration list for PBXNativeTarget "1 Ice Maker Lab" */;
 			buildPhases = (
+				97D9818009B95BCF00C9C055 /* [CP] Check Pods Manifest.lock */,
 				305D63A0309258E700E5C3DE /* Sources */,
 				305D63A1309258E700E5C3DE /* Frameworks */,
 				305D63A2309258E700E5C3DE /* Resources */,
 			);
 			buildRules = (
 			);
-			fileSystemSynchronizedGroups = (
-				305D63A6309258E700E5C3DE /* 1 Ice Maker Lab */,
+			dependencies = (
 			);
 			name = "1 Ice Maker Lab";
 			productName = "1 Ice Maker Lab";
@@ -93,6 +475,7 @@
 				};
 			};
 			buildConfigurationList = 305D639F309258E700E5C3DE /* Build configuration list for PBXProject "1 Ice Maker Lab" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -100,8 +483,6 @@
 				Base,
 			);
 			mainGroup = 305D639B309258E700E5C3DE;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 305D63A5309258E700E5C3DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -114,22 +495,116 @@
 /* Begin PBXResourcesBuildPhase section */
 		305D63A2309258E700E5C3DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
+				30BAC488309B6FAA001B2D45 /* Comfortaa-Bold.ttf in Resources */,
+				30BAC489309B6FAA001B2D45 /* Comfortaa-Medium.ttf in Resources */,
+				30BAC48A309B6FAA001B2D45 /* Comfortaa-Regular.ttf in Resources */,
+				30BAC48B309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf in Resources */,
+				30BAC48C309B6FAA001B2D45 /* Iceberg-Regular.ttf in Resources */,
+				30BAC48D309B6FAA001B2D45 /* Assets.xcassets in Resources */,
+				30BAC48F309B6FAA001B2D45 /* LaunchScreen.storyboard in Resources */,
+				30BAC490309B6FAA001B2D45 /* Main.storyboard in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97D9818009B95BCF00C9C055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-1 Ice Maker Lab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		305D63A0309258E700E5C3DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
+				30BAC491309B6FAA001B2D45 /* AnimatedIceSphere.swift in Sources */,
+				30BAC492309B6FAA001B2D45 /* FrostBackground.swift in Sources */,
+				30BAC493309B6FAA001B2D45 /* IceButton.swift in Sources */,
+				30BAC494309B6FAA001B2D45 /* IceSlider.swift in Sources */,
+				30BAC495309B6FAA001B2D45 /* LabCard.swift in Sources */,
+				30BAC496309B6FAA001B2D45 /* LabTabBar.swift in Sources */,
+				30BAC497309B6FAA001B2D45 /* LabTheme.swift in Sources */,
+				30BAC498309B6FAA001B2D45 /* FontDebug.swift in Sources */,
+				30BAC499309B6FAA001B2D45 /* AppLinks.swift in Sources */,
+				30BAC49A309B6FAA001B2D45 /* ClarityCalculatorViewModel.swift in Sources */,
+				30BAC49B309B6FAA001B2D45 /* ClarityCalculatorView.swift in Sources */,
+				30BAC49C309B6FAA001B2D45 /* CrystalRingViewModel.swift in Sources */,
+				30BAC49D309B6FAA001B2D45 /* CrystalRingView.swift in Sources */,
+				30BAC49E309B6FAA001B2D45 /* FreezeTimersViewModel.swift in Sources */,
+				30BAC49F309B6FAA001B2D45 /* FreezeTimersView.swift in Sources */,
+				30BAC4A0309B6FAA001B2D45 /* HarvestRitualViewModel.swift in Sources */,
+				30BAC4A1309B6FAA001B2D45 /* HarvestChrome.swift in Sources */,
+				30BAC4A2309B6FAA001B2D45 /* HarvestRitualView.swift in Sources */,
+				30BAC4A3309B6FAA001B2D45 /* LabJournalViewModel.swift in Sources */,
+				30BAC4A4309B6FAA001B2D45 /* LabJournalView.swift in Sources */,
+				30BAC4A5309B6FAA001B2D45 /* OnboardingStore.swift in Sources */,
+				30BAC4A6309B6FAA001B2D45 /* OnboardingView.swift in Sources */,
+				30BAC4A7309B6FAA001B2D45 /* SettingsView.swift in Sources */,
+				30BAC4A8309B6FAA001B2D45 /* HarvestBatch.swift in Sources */,
+				30BAC4A9309B6FAA001B2D45 /* IceShape.swift in Sources */,
+				30BAC4AA309B6FAA001B2D45 /* LabExperiment.swift in Sources */,
+				30BAC4AB309B6FAA001B2D45 /* ClarityScorer.swift in Sources */,
+				30BAC4AC309B6FAA001B2D45 /* DilutionPredictor.swift in Sources */,
+				30BAC4AD309B6FAA001B2D45 /* ExperimentStore.swift in Sources */,
+				30BAC4AE309B6FAA001B2D45 /* FreezeTimeCalculator.swift in Sources */,
+				30BAC4AF309B6FAA001B2D45 /* HarvestBatchStore.swift in Sources */,
+				30BAC4B0309B6FAA001B2D45 /* HarvestNotificationScheduler.swift in Sources */,
+				30BAC4B1309B6FAA001B2D45 /* HarvestWindowCalculator.swift in Sources */,
+				30BAC4B2309B6FAA001B2D45 /* AppDelegate.swift in Sources */,
+				30BAC4B3309B6FAA001B2D45 /* ContentView.swift in Sources */,
+				30BAC4B4309B6FAA001B2D45 /* SceneDelegate.swift in Sources */,
+				30BAC4B5309B6FAA001B2D45 /* ViewController.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		30BAC482309B6FAA001B2D45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30BAC481309B6FAA001B2D45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		30BAC484309B6FAA001B2D45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30BAC483309B6FAA001B2D45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		305D63B8309258E700E5C3DE /* Debug configuration for PBXNativeTarget "1 Ice Maker Lab" */ = {
+		305D63B8309258E700E5C3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -138,30 +613,37 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "1 Ice Maker Lab/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ice Maker Lab";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.--Ice-Maker-Lab";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		305D63B9309258E700E5C3DE /* Release configuration for PBXNativeTarget "1 Ice Maker Lab" */ = {
+		305D63B9309258E700E5C3DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -170,29 +652,35 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "1 Ice Maker Lab/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ice Maker Lab";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.--Ice-Maker-Lab";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		305D63BA309258E700E5C3DE /* Debug configuration for PBXProject "1 Ice Maker Lab" */ = {
+		305D63BA309258E700E5C3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +744,7 @@
 			};
 			name = Debug;
 		};
-		305D63BB309258E700E5C3DE /* Release configuration for PBXProject "1 Ice Maker Lab" */ = {
+		305D63BB309258E700E5C3DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,21 +807,22 @@
 		305D639F309258E700E5C3DE /* Build configuration list for PBXProject "1 Ice Maker Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				305D63BA309258E700E5C3DE /* Debug configuration for PBXProject "1 Ice Maker Lab" */,
-				305D63BB309258E700E5C3DE /* Release configuration for PBXProject "1 Ice Maker Lab" */,
+				305D63BA309258E700E5C3DE /* Debug */,
+				305D63BB309258E700E5C3DE /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		305D63B7309258E700E5C3DE /* Build configuration list for PBXNativeTarget "1 Ice Maker Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				305D63B8309258E700E5C3DE /* Debug configuration for PBXNativeTarget "1 Ice Maker Lab" */,
-				305D63B9309258E700E5C3DE /* Release configuration for PBXNativeTarget "1 Ice Maker Lab" */,
+				305D63B8309258E700E5C3DE /* Debug */,
+				305D63B9309258E700E5C3DE /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
 	rootObject = 305D639C309258E700E5C3DE /* Project object */;
-	validationLevel = 1;
 }
