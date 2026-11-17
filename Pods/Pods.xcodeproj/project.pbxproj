@@ -179,7 +179,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3294FABD626E3D82D7B27A0D608E00BE /* Release */ = {
+		20E418CAAB4AA5EFCC67CEC288FC3A9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D578F15CFA6FC5ABFD0D2D402B5AE25 /* Pods-1 Ice Maker Lab.release.xcconfig */;
 			buildSettings = {
@@ -197,7 +197,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -219,7 +219,7 @@
 			};
 			name = Release;
 		};
-		8C9963745FD01B6B3EF95F9CE58D9F10 /* Debug */ = {
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		B9F3557045385CA606F5AF548D58B58A /* Release */ = {
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,7 +347,7 @@
 			};
 			name = Release;
 		};
-		E2701A2A6C609D9BDC3CFB3755128D79 /* Debug */ = {
+		F234C26D7D3C6F703254CF458BD20636 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 412E440D50139E0C33CE80A0C0D284EC /* Pods-1 Ice Maker Lab.debug.xcconfig */;
 			buildSettings = {
@@ -365,7 +365,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,8 +392,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C9963745FD01B6B3EF95F9CE58D9F10 /* Debug */,
-				B9F3557045385CA606F5AF548D58B58A /* Release */,
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -401,8 +401,8 @@
 		E01AD14E63D0F9BA25C6E456671788BD /* Build configuration list for PBXNativeTarget "Pods-1 Ice Maker Lab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2701A2A6C609D9BDC3CFB3755128D79 /* Debug */,
-				3294FABD626E3D82D7B27A0D608E00BE /* Release */,
+				F234C26D7D3C6F703254CF458BD20636 /* Debug */,
+				20E418CAAB4AA5EFCC67CEC288FC3A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

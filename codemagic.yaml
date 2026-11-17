@@ -8,6 +8,7 @@ workflows:
           XCODE_WORKSPACE: "1 Ice Maker Lab.xcworkspace"
           XCODE_SCHEME: "1 Ice Maker Lab"
           BUNDLE_ID: "com.ice.maker.fishing.lab"
+          EXTENSION_BUNDLE_ID: "com.ice.maker.fishing.lab.NotificationServiceExtension"
           APP_STORE_APP_ID: 6830158784
         xcode: latest
         cocoapods: 1.14.2
@@ -24,6 +25,7 @@ workflows:
         - name: Fetch signing files
           script: |
             app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
+            app-store-connect fetch-signing-files $EXTENSION_BUNDLE_ID --type IOS_APP_STORE --create
         - name: Use system default keychain
           script: |
             keychain add-certificates
@@ -43,7 +45,7 @@ workflows:
         - build/ios/ipa/*.ipa
         - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
       publishing:
-        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution
+        app_store_connect:
             api_key: $APP_STORE_CONNECT_PRIVATE_KEY
             key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
             issuer_id: $APP_STORE_CONNECT_ISSUER_ID

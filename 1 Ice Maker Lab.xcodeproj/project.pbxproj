@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9153A260F7527A943AA3C9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4811D26BDFD58A89C1AF58C /* NotificationService.swift */; };
+		223C71829C45593D913E195E /* CampaignParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82D7B772655515E87023542 /* CampaignParser.swift */; };
 		30BAC488309B6FAA001B2D45 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC46E309B6FAA001B2D45 /* Comfortaa-Bold.ttf */; };
 		30BAC489309B6FAA001B2D45 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC46F309B6FAA001B2D45 /* Comfortaa-Medium.ttf */; };
 		30BAC48A309B6FAA001B2D45 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BAC470309B6FAA001B2D45 /* Comfortaa-Regular.ttf */; };
@@ -52,9 +54,53 @@
 		30BAC4B3309B6FAA001B2D45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC47F309B6FAA001B2D45 /* ContentView.swift */; };
 		30BAC4B4309B6FAA001B2D45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */; };
 		30BAC4B5309B6FAA001B2D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BAC486309B6FAA001B2D45 /* ViewController.swift */; };
+		30F553F830AB3830003028B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30F553F730AB3830003028B3 /* GoogleService-Info.plist */; };
+		39E5CFA8D0155454A06FDDCF /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F329948A45AB6AF853836 /* PushManager.swift */; };
+		461494B0B3625FB1B7152524 /* PercentEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC037A80F755462905B359E /* PercentEncoder.swift */; };
+		4F3594C15CAF55269FDA539D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 94CE8F4623C55FB7A53FEA18 /* FirebaseMessaging */; };
+		6EE46C84A1095C70979DF1AB /* AdjustManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A776C8384A25985ACA731C7 /* AdjustManager.swift */; };
+		786379E6086D5099A8E65CF6 /* OfferWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BF02B3EEF5398801D1D45 /* OfferWebViewController.swift */; };
+		820ADE2CCCD4512381874ADB /* IntegrationRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F405B4BEABC5B2B86DC6BD4 /* IntegrationRootViewController.swift */; };
+		964BD937DD8953F7AC6AB8B9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = C7E999F37F495189BE2FF4B4 /* FirebaseMessaging */; };
+		9BA7B938B5975EC4975F75B6 /* IntegrationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8FFA1C5A06545BA00985CA /* IntegrationStorage.swift */; };
+		BE2BC88649A25720BADD9AA4 /* DeviceSignals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443D5784B2D35808B93A9A1D /* DeviceSignals.swift */; };
+		C1D2E3F4309C20010001CC07 /* AdjustSdk in Frameworks */ = {isa = PBXBuildFile; productRef = C1D2E3F4309C20010001CC06 /* AdjustSdk */; };
+		C2977DB518015DDA973182DE /* PushNotificationURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F47B99DD5D750428C7FA00F /* PushNotificationURLRouter.swift */; };
+		D2040E5E76AF5A5CAC73FEEA /* IntegrationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7761561F1F35CD7BBC8B7D1 /* IntegrationConfig.swift */; };
+		D7F4DB8A65C25419AFFCCAD7 /* RoutingRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94137DFC669954A6AD75A038 /* RoutingRules.swift */; };
+		E23DB9179F8956619180DE2C /* IntegrationBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AFC8D89E60595C9AC8A36C /* IntegrationBootstrap.swift */; };
+		E335F8383A0F52B8B0CC9E03 /* OfferUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E32E700D9B5678B5B5F843 /* OfferUrlBuilder.swift */; };
+		E9A1B2C3D4E5F60718293A01 /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 18318C0C56B1516DB3A15817 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		31A39174794857A7B7F53247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305D639C309258E700E5C3DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 450E220BC22A5BCAAE8F4BDF;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9A1B2C3D4E5F60718293A02 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9A1B2C3D4E5F60718293A01 /* NotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18318C0C56B1516DB3A15817 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A776C8384A25985ACA731C7 /* AdjustManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustManager.swift; sourceTree = "<group>"; };
+		2F405B4BEABC5B2B86DC6BD4 /* IntegrationRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationRootViewController.swift; sourceTree = "<group>"; };
 		305D63A4309258E700E5C3DE /* 1 Ice Maker Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1 Ice Maker Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BAC43A309B6FAA001B2D45 /* AnimatedIceSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIceSphere.swift; sourceTree = "<group>"; };
 		30BAC43B309B6FAA001B2D45 /* FrostBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostBackground.swift; sourceTree = "<group>"; };
@@ -102,9 +148,27 @@
 		30BAC483309B6FAA001B2D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30BAC486309B6FAA001B2D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A6081FB87B4B6BCE69704DB /* Pods_1_Ice_Maker_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1_Ice_Maker_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.release.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.release.xcconfig"; sourceTree = "<group>"; };
-		E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.debug.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.debug.xcconfig"; sourceTree = "<group>"; };
+		30F553F730AB3830003028B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DC037A80F755462905B359E /* PercentEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentEncoder.swift; sourceTree = "<group>"; };
+		3E2F329948A45AB6AF853836 /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
+		443D5784B2D35808B93A9A1D /* DeviceSignals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSignals.swift; sourceTree = "<group>"; };
+		519C962D71705011916DF62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526BF02B3EEF5398801D1D45 /* OfferWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferWebViewController.swift; sourceTree = "<group>"; };
+		64AFC8D89E60595C9AC8A36C /* IntegrationBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationBootstrap.swift; sourceTree = "<group>"; };
+		65E32E700D9B5678B5B5F843 /* OfferUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferUrlBuilder.swift; sourceTree = "<group>"; };
+		7E32393CDDA55D268EF6BED3 /* 1 Ice Maker Lab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "1 Ice Maker Lab.entitlements"; sourceTree = "<group>"; };
+		8A8FFA1C5A06545BA00985CA /* IntegrationStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationStorage.swift; sourceTree = "<group>"; };
+		8F47B99DD5D750428C7FA00F /* PushNotificationURLRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationURLRouter.swift; sourceTree = "<group>"; };
+		92AE7A6516D7EF91117BE273 /* Pods-1 Ice Maker Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.debug.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.debug.xcconfig"; sourceTree = "<group>"; };
+		94137DFC669954A6AD75A038 /* RoutingRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingRules.swift; sourceTree = "<group>"; };
+		A1B2C3D4309C00010001AA01 /* StartAppConfiguration+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartAppConfiguration+App.swift"; sourceTree = "<group>"; };
+		A1B2C3D4309C00010001AA02 /* StartAppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartAppSecrets.swift; sourceTree = "<group>"; };
+		B2C3D4E5309C10010001BB00 /* AdjustBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustBootstrap.swift; sourceTree = "<group>"; };
+		B5763F3B643D704FC7BB6A47 /* Pods_1_Ice_Maker_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1_Ice_Maker_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE3C042B5F83BA05DDDFA6A /* Pods-1 Ice Maker Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1 Ice Maker Lab.release.xcconfig"; path = "Target Support Files/Pods-1 Ice Maker Lab/Pods-1 Ice Maker Lab.release.xcconfig"; sourceTree = "<group>"; };
+		F4811D26BDFD58A89C1AF58C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F7761561F1F35CD7BBC8B7D1 /* IntegrationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationConfig.swift; sourceTree = "<group>"; };
+		F82D7B772655515E87023542 /* CampaignParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +176,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D2E3F4309C20010001CC07 /* AdjustSdk in Frameworks */,
+				4F3594C15CAF55269FDA539D /* FirebaseMessaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A83745A6C8563F93E1B725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964BD937DD8953F7AC6AB8B9 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,9 +196,10 @@
 			isa = PBXGroup;
 			children = (
 				30BAC487309B6FAA001B2D45 /* 1 Ice Maker Lab */,
+				898E9987F4AF5B8C85151E4B /* NotificationServiceExtension */,
 				305D63A5309258E700E5C3DE /* Products */,
-				556498D6033DC0AB89EBB314 /* Pods */,
-				F08BF794C7E884A00BC450F2 /* Frameworks */,
+				925328CB5CA338C74C2170C7 /* Pods */,
+				78B5637BA0FECB4196C23B90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				305D63A4309258E700E5C3DE /* 1 Ice Maker Lab.app */,
+				18318C0C56B1516DB3A15817 /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -390,6 +466,7 @@
 		30BAC47C309B6FAA001B2D45 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B2C3D4E5309C10010001BB00 /* AdjustBootstrap.swift */,
 				30BAC475309B6FAA001B2D45 /* ClarityScorer.swift */,
 				30BAC476309B6FAA001B2D45 /* DilutionPredictor.swift */,
 				30BAC477309B6FAA001B2D45 /* ExperimentStore.swift */,
@@ -408,7 +485,9 @@
 				30BAC469309B6FAA001B2D45 /* Features */,
 				30BAC46D309B6FAA001B2D45 /* Models */,
 				30BAC474309B6FAA001B2D45 /* Resources */,
+				35A1A7D764B5574FB2A6FBB6 /* Integration */,
 				30BAC47C309B6FAA001B2D45 /* Services */,
+				A1B2C3D4309C00010001AA05 /* StartApp */,
 				30BAC47D309B6FAA001B2D45 /* AppDelegate.swift */,
 				30BAC47E309B6FAA001B2D45 /* Assets.xcassets */,
 				30BAC47F309B6FAA001B2D45 /* ContentView.swift */,
@@ -417,25 +496,65 @@
 				30BAC484309B6FAA001B2D45 /* Main.storyboard */,
 				30BAC485309B6FAA001B2D45 /* SceneDelegate.swift */,
 				30BAC486309B6FAA001B2D45 /* ViewController.swift */,
+				30F553F730AB3830003028B3 /* GoogleService-Info.plist */,
+				7E32393CDDA55D268EF6BED3 /* 1 Ice Maker Lab.entitlements */,
 			);
 			path = "1 Ice Maker Lab";
 			sourceTree = "<group>";
 		};
-		556498D6033DC0AB89EBB314 /* Pods */ = {
+		35A1A7D764B5574FB2A6FBB6 /* Integration */ = {
 			isa = PBXGroup;
 			children = (
-				E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */,
-				907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */,
+				F7761561F1F35CD7BBC8B7D1 /* IntegrationConfig.swift */,
+				8A8FFA1C5A06545BA00985CA /* IntegrationStorage.swift */,
+				3DC037A80F755462905B359E /* PercentEncoder.swift */,
+				F82D7B772655515E87023542 /* CampaignParser.swift */,
+				65E32E700D9B5678B5B5F843 /* OfferUrlBuilder.swift */,
+				443D5784B2D35808B93A9A1D /* DeviceSignals.swift */,
+				3E2F329948A45AB6AF853836 /* PushManager.swift */,
+				8F47B99DD5D750428C7FA00F /* PushNotificationURLRouter.swift */,
+				2A776C8384A25985ACA731C7 /* AdjustManager.swift */,
+				526BF02B3EEF5398801D1D45 /* OfferWebViewController.swift */,
+				94137DFC669954A6AD75A038 /* RoutingRules.swift */,
+				2F405B4BEABC5B2B86DC6BD4 /* IntegrationRootViewController.swift */,
+				64AFC8D89E60595C9AC8A36C /* IntegrationBootstrap.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		78B5637BA0FECB4196C23B90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5763F3B643D704FC7BB6A47 /* Pods_1_Ice_Maker_Lab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		898E9987F4AF5B8C85151E4B /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F4811D26BDFD58A89C1AF58C /* NotificationService.swift */,
+				519C962D71705011916DF62A /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		925328CB5CA338C74C2170C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92AE7A6516D7EF91117BE273 /* Pods-1 Ice Maker Lab.debug.xcconfig */,
+				DCE3C042B5F83BA05DDDFA6A /* Pods-1 Ice Maker Lab.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F08BF794C7E884A00BC450F2 /* Frameworks */ = {
+		A1B2C3D4309C00010001AA05 /* StartApp */ = {
 			isa = PBXGroup;
 			children = (
-				8A6081FB87B4B6BCE69704DB /* Pods_1_Ice_Maker_Lab.framework */,
+				A1B2C3D4309C00010001AA01 /* StartAppConfiguration+App.swift */,
+				A1B2C3D4309C00010001AA02 /* StartAppSecrets.swift */,
 			);
-			name = Frameworks;
+			path = StartApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,19 +564,45 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305D63B7309258E700E5C3DE /* Build configuration list for PBXNativeTarget "1 Ice Maker Lab" */;
 			buildPhases = (
-				97D9818009B95BCF00C9C055 /* [CP] Check Pods Manifest.lock */,
+				5D2C43E2A02B60EB2C224677 /* [CP] Check Pods Manifest.lock */,
 				305D63A0309258E700E5C3DE /* Sources */,
 				305D63A1309258E700E5C3DE /* Frameworks */,
 				305D63A2309258E700E5C3DE /* Resources */,
+				E9A1B2C3D4E5F60718293A02 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53FC21ACA1E45886936E3343 /* PBXTargetDependency */,
+			);
+			name = "1 Ice Maker Lab";
+			packageProductDependencies = (
+				C1D2E3F4309C20010001CC06 /* AdjustSdk */,
+				94CE8F4623C55FB7A53FEA18 /* FirebaseMessaging */,
+			);
+			productName = "1 Ice Maker Lab";
+			productReference = 305D63A4309258E700E5C3DE /* 1 Ice Maker Lab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		450E220BC22A5BCAAE8F4BDF /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DB3B027F5E5726B9576FA7 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				463EBB003F405530A3AFA396 /* Sources */,
+				C7A83745A6C8563F93E1B725 /* Frameworks */,
+				94DDFEE1C47D58EEB758704A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "1 Ice Maker Lab";
-			productName = "1 Ice Maker Lab";
-			productReference = 305D63A4309258E700E5C3DE /* 1 Ice Maker Lab.app */;
-			productType = "com.apple.product-type.application";
+			name = NotificationServiceExtension;
+			packageProductDependencies = (
+				C7E999F37F495189BE2FF4B4 /* FirebaseMessaging */,
+			);
+			productName = NotificationServiceExtension;
+			productReference = 18318C0C56B1516DB3A15817 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -472,6 +617,9 @@
 					305D63A3309258E700E5C3DE = {
 						CreatedOnToolsVersion = 27.1;
 					};
+					450E220BC22A5BCAAE8F4BDF = {
+						CreatedOnToolsVersion = 27.1;
+					};
 				};
 			};
 			buildConfigurationList = 305D639F309258E700E5C3DE /* Build configuration list for PBXProject "1 Ice Maker Lab" */;
@@ -483,11 +631,16 @@
 				Base,
 			);
 			mainGroup = 305D639B309258E700E5C3DE;
+			packageReferences = (
+				C1D2E3F4309C20010001CC08 /* XCLocalSwiftPackageReference "Packages/ios_sdk" */,
+				8956DB45FEEA50C7883C9D00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 305D63A5309258E700E5C3DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				305D63A3309258E700E5C3DE /* 1 Ice Maker Lab */,
+				450E220BC22A5BCAAE8F4BDF /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -499,6 +652,7 @@
 			files = (
 				30BAC488309B6FAA001B2D45 /* Comfortaa-Bold.ttf in Resources */,
 				30BAC489309B6FAA001B2D45 /* Comfortaa-Medium.ttf in Resources */,
+				30F553F830AB3830003028B3 /* GoogleService-Info.plist in Resources */,
 				30BAC48A309B6FAA001B2D45 /* Comfortaa-Regular.ttf in Resources */,
 				30BAC48B309B6FAA001B2D45 /* Comfortaa-SemiBold.ttf in Resources */,
 				30BAC48C309B6FAA001B2D45 /* Iceberg-Regular.ttf in Resources */,
@@ -508,10 +662,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94DDFEE1C47D58EEB758704A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		97D9818009B95BCF00C9C055 /* [CP] Check Pods Manifest.lock */ = {
+		5D2C43E2A02B60EB2C224677 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -577,10 +738,39 @@
 				30BAC4B3309B6FAA001B2D45 /* ContentView.swift in Sources */,
 				30BAC4B4309B6FAA001B2D45 /* SceneDelegate.swift in Sources */,
 				30BAC4B5309B6FAA001B2D45 /* ViewController.swift in Sources */,
+				D2040E5E76AF5A5CAC73FEEA /* IntegrationConfig.swift in Sources */,
+				9BA7B938B5975EC4975F75B6 /* IntegrationStorage.swift in Sources */,
+				461494B0B3625FB1B7152524 /* PercentEncoder.swift in Sources */,
+				223C71829C45593D913E195E /* CampaignParser.swift in Sources */,
+				E335F8383A0F52B8B0CC9E03 /* OfferUrlBuilder.swift in Sources */,
+				BE2BC88649A25720BADD9AA4 /* DeviceSignals.swift in Sources */,
+				39E5CFA8D0155454A06FDDCF /* PushManager.swift in Sources */,
+				C2977DB518015DDA973182DE /* PushNotificationURLRouter.swift in Sources */,
+				6EE46C84A1095C70979DF1AB /* AdjustManager.swift in Sources */,
+				786379E6086D5099A8E65CF6 /* OfferWebViewController.swift in Sources */,
+				D7F4DB8A65C25419AFFCCAD7 /* RoutingRules.swift in Sources */,
+				820ADE2CCCD4512381874ADB /* IntegrationRootViewController.swift in Sources */,
+				E23DB9179F8956619180DE2C /* IntegrationBootstrap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463EBB003F405530A3AFA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9153A260F7527A943AA3C9 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53FC21ACA1E45886936E3343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 450E220BC22A5BCAAE8F4BDF /* NotificationServiceExtension */;
+			targetProxy = 31A39174794857A7B7F53247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30BAC482309B6FAA001B2D45 /* LaunchScreen.storyboard */ = {
@@ -604,13 +794,16 @@
 /* Begin XCBuildConfiguration section */
 		305D63B8309258E700E5C3DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E77936B814505B15CD11DC06 /* Pods-1 Ice Maker Lab.debug.xcconfig */;
+			baseConfigurationReference = 92AE7A6516D7EF91117BE273 /* Pods-1 Ice Maker Lab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "1 Ice Maker Lab/1 Ice Maker Lab.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_DEBUG_DYLIB = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "1 Ice Maker Lab/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ice Maker Lab";
@@ -624,7 +817,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -643,13 +841,16 @@
 		};
 		305D63B9309258E700E5C3DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 907669398D5450D8841D6EE0 /* Pods-1 Ice Maker Lab.release.xcconfig */;
+			baseConfigurationReference = DCE3C042B5F83BA05DDDFA6A /* Pods-1 Ice Maker Lab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "1 Ice Maker Lab/1 Ice Maker Lab.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_DEBUG_DYLIB = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "1 Ice Maker Lab/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Ice Maker Lab";
@@ -663,7 +864,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -718,7 +923,8 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -738,6 +944,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -782,7 +992,8 @@
 				DEVELOPMENT_TEAM = AR6AN34RS9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -795,8 +1006,80 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44E4A46922A6591BA5991654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_DEBUG_DYLIB = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		827F00C4B2E05828A8B39169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_DEBUG_DYLIB = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ice.maker.fishing.lab.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -822,7 +1105,52 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D1DB3B027F5E5726B9576FA7 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E4A46922A6591BA5991654 /* Debug */,
+				827F00C4B2E05828A8B39169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C1D2E3F4309C20010001CC08 /* XCLocalSwiftPackageReference "Packages/ios_sdk" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ios_sdk;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8956DB45FEEA50C7883C9D00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94CE8F4623C55FB7A53FEA18 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8956DB45FEEA50C7883C9D00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		C1D2E3F4309C20010001CC06 /* AdjustSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1D2E3F4309C20010001CC08 /* XCLocalSwiftPackageReference "Packages/ios_sdk" */;
+			productName = AdjustSdk;
+		};
+		C7E999F37F495189BE2FF4B4 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8956DB45FEEA50C7883C9D00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 305D639C309258E700E5C3DE /* Project object */;
 }
