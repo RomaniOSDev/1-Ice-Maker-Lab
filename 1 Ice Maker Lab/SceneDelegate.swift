@@ -21,17 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let response = connectionOptions.notificationResponse {
             let userInfo = response.notification.request.content.userInfo
             if let url = PushNotificationURLRouter.shared.extractURL(from: userInfo) {
-                PushNotificationURLRouter.shared.setPendingURL(url)
+                DispatchQueue.main.async {
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                }
             }
         }
     }
 
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        guard let url = PushNotificationURLRouter.shared.consumePendingURL() else { return }
-        // Keep pending for OfferWebView.viewDidAppear if Black UI is not up yet.
-        PushNotificationURLRouter.shared.setPendingURL(url)
-        NotificationCenter.default.post(name: .integrationOpenOfferURL, object: url)
-    }
+    func sceneDidBecomeActive(_ scene: UIScene) {}
 
     func sceneDidDisconnect(_ scene: UIScene) {}
     func sceneWillResignActive(_ scene: UIScene) {}

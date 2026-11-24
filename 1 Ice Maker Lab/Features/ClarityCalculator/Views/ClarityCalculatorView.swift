@@ -52,25 +52,13 @@ struct ClarityCalculatorView: View {
                         .clipShape(RoundedRectangle(cornerRadius: LabTheme.Radius.md, style: .continuous))
                 }
 
-                LabCard {
+                HarvestPanel {
                     VStack(alignment: .leading, spacing: LabTheme.Spacing.md) {
-                        Text("Recipe inputs")
-                            .font(LabFont.title(18))
-                            .foregroundStyle(LabColor.ink)
+                        recipeHeader
 
-                        Picker("Method", selection: $viewModel.method) {
-                            ForEach(FreezeMethod.allCases) { method in
-                                Text(method.title).tag(method)
-                            }
-                        }
-                        .pickerStyle(.segmented)
+                        HarvestMethodRail(method: $viewModel.method)
 
-                        Picker("Hardness", selection: $viewModel.hardness) {
-                            ForEach(WaterHardness.allCases) { item in
-                                Text(item.title).tag(item)
-                            }
-                        }
-                        .pickerStyle(.segmented)
+                        hardnessRail
 
                         IceLabeledSlider(
                             title: "Boil time",
@@ -156,29 +144,96 @@ struct ClarityCalculatorView: View {
             .padding(.top, LabTheme.Spacing.sm)
             .padding(.bottom, 110)
         }
+        .scrollContentBackground(.hidden)
+        .background(Color.clear)
+    }
+
+    private var recipeHeader: some View {
+        HStack(alignment: .center, spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(
+                        LinearGradient(
+                            colors: [LabColor.cyanIce, LabColor.glacier],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .frame(width: 42, height: 42)
+                Image(systemName: "drop.fill")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundStyle(.white)
+            }
+            .shadow(color: LabColor.glacier.opacity(0.35), radius: 8, y: 4)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text("RECIPE INPUTS")
+                    .font(LabFont.caption(11))
+                    .tracking(1.4)
+                    .foregroundStyle(LabColor.glacier)
+                Text("How this batch is made")
+                    .font(LabFont.title(18))
+                    .foregroundStyle(LabColor.ink)
+            }
+            Spacer(minLength: 0)
+        }
+    }
+
+    private var hardnessRail: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Water")
+                .font(LabFont.body(14))
+                .foregroundStyle(LabColor.ink)
+            HStack(spacing: 8) {
+                ForEach(WaterHardness.allCases) { item in
+                    let selected = viewModel.hardness == item
+                    Button {
+                        withAnimation(LabTheme.Motion.quick) { viewModel.hardness = item }
+                    } label: {
+                        VStack(spacing: 6) {
+                            Image(systemName: hardnessIcon(item))
+                                .font(.system(size: 16, weight: .semibold))
+                            Text(item.title)
+                                .font(LabFont.caption(12))
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .foregroundStyle(selected ? LabColor.glacier : LabColor.inkSoft)
+                        .background(
+                            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                                .fill(selected ? LabColor.glacier.opacity(0.14) : Color.white.opacity(0.45))
+                        )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                                .stroke(selected ? LabColor.glacier.opacity(0.55) : Color.white.opacity(0.5), lineWidth: selected ? 1.4 : 1)
+                        )
+                        .shadow(color: selected ? LabColor.glacier.opacity(0.18) : .clear, radius: 8, y: 4)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+
+    private func hardnessIcon(_ hardness: WaterHardness) -> String {
+        switch hardness {
+        case .soft: return "drop"
+        case .medium: return "drop.halffull"
+        case .hard: return "drop.fill"
+        }
     }
 
     private var moldRow: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Mold")
                 .font(LabFont.body(14))
+                .foregroundStyle(LabColor.ink)
             HStack(spacing: 8) {
                 ForEach(IceShape.allCases) { shape in
-                    let selected = viewModel.shape == shape
-                    Button {
+                    HarvestMoldTile(shape: shape, selected: viewModel.shape == shape) {
                         withAnimation(LabTheme.Motion.quick) { viewModel.shape = shape }
-                    } label: {
-                        Text(shape.title)
-                            .font(LabFont.caption(12))
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 10)
-                            .background(
-                                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                    .fill(selected ? LabColor.glacier : Color.white.opacity(0.55))
-                            )
-                            .foregroundStyle(selected ? .white : LabColor.ink)
                     }
-                    .buttonStyle(.plain)
+                    .frame(maxWidth: .infinity)
                 }
             }
         }

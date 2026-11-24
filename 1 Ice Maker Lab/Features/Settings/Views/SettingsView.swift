@@ -9,9 +9,9 @@ import SwiftUI
 import StoreKit
 
 struct SettingsView: View {
-    @Environment(\.openURL) private var openURL
     @ObservedObject private var onboarding = OnboardingStore.shared
     @State private var heroPulse = false
+    @State private var legalPage: LegalPage?
 
     private var appVersion: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -76,7 +76,7 @@ struct SettingsView: View {
                             icon: "hand.raised.fill",
                             title: "Privacy Policy",
                             subtitle: "How your data is handled",
-                            url: AppLinks.privacyPolicyURL
+                            page: LegalPage(title: "Privacy Policy", url: AppLinks.privacyPolicyURL)
                         )
 
                         Divider().padding(.leading, 56)
@@ -85,7 +85,7 @@ struct SettingsView: View {
                             icon: "doc.text.fill",
                             title: "Terms of Use",
                             subtitle: "Rules for using these tools",
-                            url: AppLinks.termsOfUseURL
+                            page: LegalPage(title: "Terms of Use", url: AppLinks.termsOfUseURL)
                         )
 
                         Divider().padding(.leading, 56)
@@ -119,6 +119,11 @@ struct SettingsView: View {
             .padding(.horizontal, LabTheme.Spacing.md)
             .padding(.top, LabTheme.Spacing.sm)
             .padding(.bottom, 110)
+        }
+        .scrollContentBackground(.hidden)
+        .background(Color.clear)
+        .sheet(item: $legalPage) { page in
+            LegalWebSheet(page: page)
         }
     }
 
@@ -169,10 +174,10 @@ struct SettingsView: View {
         icon: String,
         title: String,
         subtitle: String,
-        url: URL
+        page: LegalPage
     ) -> some View {
         Button {
-            openURL(url)
+            legalPage = page
         } label: {
             rowLabel(icon: icon, title: title, subtitle: subtitle)
         }

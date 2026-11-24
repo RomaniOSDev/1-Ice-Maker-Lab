@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               let options = FirebaseOptions(contentsOfFile: path) else {
             return
         }
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure(options: options)
     }
 

@@ -1,6 +1,6 @@
 import Foundation
 
-/// Persistent Integration state. Excluded from iCloud backup / device transfer.
+/// Persistent Integration state for Adjust identifiers and push. Excluded from iCloud backup.
 final class IntegrationStorage: @unchecked Sendable {
 
     static let shared = IntegrationStorage()
@@ -10,19 +10,12 @@ final class IntegrationStorage: @unchecked Sendable {
     private let fileURL: URL
 
     private struct State: Codable {
-        var whiteLocked: Bool = false
-        var cachedOfferURL: String?
-        var cachedOfferExpiresAt: Date?
         var attribution: [String: String] = [:]
         var adid: String?
         var idfv: String?
         var idfa: String?
-        var sub12: String?
-        var sub13: String?
-        var sub14: String?
         var pushToken: String?
         var pushId: String?
-        var deviceSignalsCaptured: Bool = false
     }
 
     private init() {
@@ -37,39 +30,6 @@ final class IntegrationStorage: @unchecked Sendable {
         }
         excludeFromBackup(fileURL)
         excludeFromBackup(dir)
-    }
-
-    // MARK: - White / cache
-
-    var isWhiteLocked: Bool {
-        queue.sync { state.whiteLocked }
-    }
-
-    func lockWhiteForever() {
-        queue.sync {
-            state.whiteLocked = true
-            persistLocked()
-        }
-    }
-
-    var freshCachedOfferURL: URL? {
-        queue.sync {
-            guard let raw = state.cachedOfferURL,
-                  let expiry = state.cachedOfferExpiresAt,
-                  expiry > Date(),
-                  let url = URL(string: raw) else {
-                return nil
-            }
-            return url
-        }
-    }
-
-    func cacheOfferURL(_ url: URL, duration: TimeInterval = 24 * 60 * 60) {
-        queue.sync {
-            state.cachedOfferURL = url.absoluteString
-            state.cachedOfferExpiresAt = Date().addingTimeInterval(duration)
-            persistLocked()
-        }
     }
 
     // MARK: - Attribution merge
@@ -123,27 +83,6 @@ final class IntegrationStorage: @unchecked Sendable {
         }
     }
 
-    // MARK: - Device signals (one-shot)
-
-    var deviceSignalsCaptured: Bool {
-        queue.sync { state.deviceSignalsCaptured }
-    }
-
-    var sub12: String? { queue.sync { state.sub12 } }
-    var sub13: String? { queue.sync { state.sub13 } }
-    var sub14: String? { queue.sync { state.sub14 } }
-
-    func storeDeviceSignals(sub12: String, sub13: String, sub14: String) {
-        queue.sync {
-            guard !state.deviceSignalsCaptured else { return }
-            state.sub12 = sub12
-            state.sub13 = sub13
-            state.sub14 = sub14
-            state.deviceSignalsCaptured = true
-            persistLocked()
-        }
-    }
-
     // MARK: - Push
 
     var pushToken: String? { queue.sync { state.pushToken } }
@@ -175,7 +114,7 @@ final class IntegrationStorage: @unchecked Sendable {
             try data.write(to: fileURL, options: [.atomic])
             excludeFromBackup(fileURL)
         } catch {
-            // Best-effort; routing still works in-memory for this session.
+            // Best-effort persistence.
         }
     }
 

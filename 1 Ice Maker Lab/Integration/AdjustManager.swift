@@ -22,14 +22,12 @@ final class AdjustManager: NSObject {
 
         #if DEBUG
         let environment = ADJEnvironmentSandbox
-        let logLevel = ADJLogLevel.verbose
         #else
         let environment = ADJEnvironmentProduction
-        let logLevel = ADJLogLevel.suppress
         #endif
 
         guard let config = ADJConfig(appToken: appToken, environment: environment) else { return }
-        config.logLevel = logLevel
+        config.logLevel = ADJLogLevel.suppress
         config.delegate = self
         Adjust.initSdk(config)
 

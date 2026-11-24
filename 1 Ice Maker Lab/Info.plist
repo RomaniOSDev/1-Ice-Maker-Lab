@@ -4,21 +4,8 @@
 <dict>
 	<key>AdjustAppToken</key>
 	<string>rt7wm2cr5khs</string>
-	<key>OfferBaseUrl</key>
-	<string>https://ice-maker-lab.sbs/</string>
-	<key>OfferRouting</key>
-	<string>aso</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>This identifier will be used to deliver personalized ads and measure campaign performance.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Camera access is used when an offer page needs to capture a document or photo.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Microphone access is used when an offer page needs audio input.</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
-	</dict>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

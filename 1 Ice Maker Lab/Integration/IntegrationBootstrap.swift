@@ -10,12 +10,11 @@ enum IntegrationBootstrap {
         PushManager.shared.registerForRemoteNotifications(application)
         PushManager.shared.capturePushURLFromLaunchOptions(launchOptions)
         AdjustManager.shared.start(appToken: config.adjustAppToken)
-        DeviceSignals.captureIfNeeded(into: IntegrationStorage.shared)
         _ = IntegrationStorage.shared.pushId
     }
 
     static func makeRoot(makeWhiteRoot: @escaping () -> UIViewController) -> UIViewController {
-        IntegrationRootViewController(config: config, makeWhiteRoot: makeWhiteRoot)
+        makeWhiteRoot()
     }
 
     static func didRegisterForRemoteNotifications(deviceToken: Data) {

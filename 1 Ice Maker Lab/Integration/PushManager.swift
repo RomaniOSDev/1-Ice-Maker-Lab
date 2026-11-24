@@ -19,6 +19,7 @@ final class PushManager: NSObject {
         if FirebaseApp.app() == nil {
             if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
                let options = FirebaseOptions(contentsOfFile: path) {
+                FirebaseConfiguration.shared.setLoggerLevel(.min)
                 FirebaseApp.configure(options: options)
             }
         }
@@ -50,7 +51,9 @@ final class PushManager: NSObject {
     func capturePushURLFromLaunchOptions(_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         guard let userInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any],
               let url = PushNotificationURLRouter.shared.extractURL(from: userInfo) else { return }
-        PushNotificationURLRouter.shared.setPendingURL(url)
+        DispatchQueue.main.async {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 
     func waitForToken(timeoutSeconds: TimeInterval = 2.5) async -> String? {
@@ -111,13 +114,10 @@ extension PushManager: UNUserNotificationCenterDelegate {
     ) {
         let userInfo = response.notification.request.content.userInfo
         if let url = PushNotificationURLRouter.shared.extractURL(from: userInfo) {
-            PushNotificationURLRouter.shared.setPendingURL(url)
-            NotificationCenter.default.post(name: .integrationOpenOfferURL, object: url)
+            DispatchQueue.main.async {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
         completionHandler()
     }
-}
-
-extension Notification.Name {
-    static let integrationOpenOfferURL = Notification.Name("integrationOpenOfferURL")
 }
